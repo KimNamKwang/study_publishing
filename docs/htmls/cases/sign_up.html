@@ -7,50 +7,37 @@
     <title>Document</title>
   </head>
   <body>
-    <h3>div줄바꿈Sign Up</h3>
+    <h5 align="right">✓표시 항목은 필수 입력 항목입니다. </h5>
+    <h3>기본정보</h3>
     <hr />
     <form action="../../htmls/forms.html" method="get">
       <table border="1">
         <tr>
-          <th>이름</th>
+          <th>✓이름</th>
           <th>
-            <div>
-              <label for=""></label>
-            </div>
-            <div>
+            <div align="left">
               <textarea name="user_Name" id="" cols="20" rows="1"></textarea>
             </div>
           </th>
         </tr>
 
         <tr>
-          <th>아이디</th>
-          <th>
-            <div>
-              <label for=""></label>
+          <th>✓아이디</th>
+          <th>     
+            <div align="left">
+              <textarea name="user_ID" id="" cols="20" rows="1"></textarea>            
+             <button type="submit">아이디중복확인</button>
             </div>
-            <div>
-              <textarea name="user_ID" id="" cols="20" rows="1"></textarea>
-            </div>
-            6~16자까지 영문자(소문자), 숫자 사용 가능합니다.
-          </th>
-
-          <th>
-            <div>
-              <label for=""></label>
-            </div>
-            <div>
-              <button type="submit">아이디중복확인</button>
+            <div align="left">
+             6~16자까지 영문자(소문자), 숫자 사용 가능합니다.
             </div>
           </th>
         </tr>
+
         <tr>
-          <th>비밀번호</th>
-          <th>
-            <div>
-              <label for=""></label>
-            </div>
-            <div>
+          <th>✓비밀번호</th>
+          <th>          
+            <div align="left">
               <textarea
                 name="user_Password"
                 id=""
@@ -58,17 +45,17 @@
                 rows="1"
               ></textarea>
             </div>
-            6~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.
-            <p>3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.</p>
+            <div  align="left">
+              6~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.
+              <p>3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.</p>
+            </div>
           </th>
         </tr>
+
         <tr>
-          <th>비밀번호 확인</th>
-          <th>
-            <div>
-              <label for=""></label>
-            </div>
-            <div>
+          <th>✓비밀번호 확인</th>
+          <th>         
+            <div align="left">
               <textarea
                 name="password_Check"
                 id=""
@@ -79,74 +66,57 @@
           </th>
         </tr>
         <tr>
-          <th>이메일</th>
+          <th>✓이메일</th>
           <th>
-            <span>
-              <label for=""></label>
-            </span>
-            <span>
-              <textarea name="EMail" id="" cols="20" rows="1"></textarea>
-            </span>
-            @
-            <span>
-              <label for=""></label>
-            </span>
-            <span>
+            <div align="left">
+              <textarea name="EMail" id="" cols="20" rows="1"></textarea>              
+              @
               <textarea
-                name="EMail_address"
-                id=""
-                cols="20"
-                rows="1"
-              ></textarea>
-            </span>
-          </th>
-          <th>
-            <span
-              ><form action="./forms.html" method="get">
-                <span>
-                  <label for=""></label>
-                  <select name="cars" id="">
-                    <option value="메일주소선택">메일주소선택</option>
-                    <option value="@naver.com">@naver.com</option>
-                    <option value="@google.com">@google.com</option>
-                  </select>
-                </span>
-              </form></span
-            >
-          </th>
+              name="EMail_address" id=""cols="20" rows="1"></textarea>             
+              
+              <select name="cars" id="">
+                <option value="메일주소선택">메일주소선택</option>
+                <option value="@naver.com">@naver.com</option>
+                <option value="@google.com">@google.com</option>
+              </select>
+              
+            </div>
+            
+            </th>
+          
         </tr>
         <tr>
-          <th>연락처</th>
+          <th>✓연락처</th>
           <th>
+            <div align="left">
             휴대전화
-            <span>
-              <label for=""></label>
               <select name="휴대전화번호 선택" id="">
                 <option value="010">010</option>
                 <option value="011">011</option>
                 <option value="017">017</option>
               </select>
-            </span>
-            -
-            <span>
+              
+              -
+              
               <textarea
-                name="phone_number_fir"
-                id=""
-                cols="20"
-                rows="1"
+              name="phone_number_fir"
+              id=""
+              cols="20"
+              rows="1"
               ></textarea>
-            </span>
-            -
-            <span>
+           
+              -
+              
               <textarea
-                name="phone_number_sec"
-                id=""
-                cols="20"
-                rows="1"
+              name="phone_number_sec"
+              id=""
+              cols="20"
+              rows="1"
               ></textarea>
-            </span>
+            </div>
+           
 
-            <div>
+            <div align="left">
               일반전화
               <span>
                 <label for=""></label>
@@ -165,27 +135,28 @@
                 <textarea name="number_sec" id="" cols="20" rows="1"></textarea>
               </span>
             </div>
-            <div>연락처는 둘 중 하나만 입력해도 됩니다.</div>
+            <div align="left">연락처는 둘 중 하나만 입력해도 됩니다.</div>
           </th>
         </tr>
         <tr>
-          <th>우편번호</th>
+          <th>✓우편번호</th>
           <th>
-            <span>
+            <div align="left">
+
               <textarea name="postal_code" id="" cols="20" rows="1"></textarea>
-            </span>
-            <span>
+            
               <button type="submit">주소검색</button>
-            </span>
+            
+          </div>
           </th>
         </tr>
         <tr>
-          <th>주소</th>
+          <th>✓주소</th>
           <th>
-            <span>
-              <textarea name="address" id="" cols="70" rows="1"></textarea>
-            </span>
-            <div>
+            <div  align="left">
+              <textarea name="address" id="" cols="70" rows="1"></textarea>             
+            </div>
+            <div  align="left">
               <textarea
                 name="address_detail"
                 id=""
@@ -196,7 +167,7 @@
           </th>
         </tr>
         <tr>
-          <th>정보수신 여부</th>
+          <th>✓정보수신 여부</th>
           <th>
             서비스 및 이벤트 소식을
             <span>
