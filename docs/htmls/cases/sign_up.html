@@ -9,6 +9,7 @@
   <body>
     <h5 align="right">✓표시 항목은 필수 입력 항목입니다. </h5>
     <h3>기본정보</h3>
+    <!-- http://127.0.0.1:5500/docs/htmls/forms.html?user_name=HongGilDong&user_id=hongildongID&user_password=honggildongpassword&password_check=honggildongpassword&email=hgd123&email_address=naver.com&select_email_address=%EB%A9%94%EC%9D%BC%EC%A3%BC%EC%86%8C%EC%84%A0%ED%83%9D&%ED%9C%B4%EB%8C%80%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8+%EC%84%A0%ED%83%9D=010&phone_number_fir=1234&phone_number_sec=5678&%EC%9D%BC%EB%B0%98%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8+%EC%84%A0%ED%83%9D=02&number_fir=4321&number_sec=8765&postal_code=01823&address=D.C+Washington.+USA&address_detail=123+Street&with_email.=with_email&with_sms.=with_sms-->
     <hr />
     <form action="../../htmls/forms.html" method="get">
       <table border="1">
@@ -16,7 +17,7 @@
           <th>✓이름</th>
           <th>
             <div align="left">
-              <textarea name="user_Name" id="" cols="20" rows="1"></textarea>
+              <textarea name="user_name" id="" cols="20" rows="1"></textarea>
             </div>
           </th>
         </tr>
@@ -25,7 +26,7 @@
           <th>✓아이디</th>
           <th>     
             <div align="left">
-              <textarea name="user_ID" id="" cols="20" rows="1"></textarea>            
+              <textarea name="user_id" id="" cols="20" rows="1"></textarea>            
              <button type="submit">아이디중복확인</button>
             </div>
             <div align="left">
@@ -39,7 +40,7 @@
           <th>          
             <div align="left">
               <textarea
-                name="user_Password"
+                name="user_password"
                 id=""
                 cols="20"
                 rows="1"
@@ -57,7 +58,7 @@
           <th>         
             <div align="left">
               <textarea
-                name="password_Check"
+                name="password_check"
                 id=""
                 cols="20"
                 rows="1"
@@ -69,12 +70,12 @@
           <th>✓이메일</th>
           <th>
             <div align="left">
-              <textarea name="EMail" id="" cols="20" rows="1"></textarea>              
+              <textarea name="email" id="" cols="20" rows="1"></textarea>              
               @
               <textarea
-              name="EMail_address" id=""cols="20" rows="1"></textarea>             
+              name="email_address" id=""cols="20" rows="1"></textarea>             
               
-              <select name="cars" id="">
+              <select name="select_email_address" id="">
                 <option value="메일주소선택">메일주소선택</option>
                 <option value="@naver.com">@naver.com</option>
                 <option value="@google.com">@google.com</option>
@@ -174,17 +175,17 @@
               <input
                 type="checkbox"
                 name="with_email."
-                value="With_EMail"
-                id="With_EMail"
+                value="with_email"
+                id="with_email"
               />
-              <label for="With_SMS">Email로 수신하겠습니다.</label>
+              <label for="with_sms">Email로 수신하겠습니다.</label>
               <input
                 type="checkbox"
                 name="with_sms."
-                value="With_SMS"
-                id="With_SMS"
+                value="with_sms"
+                id="with_sms"
               />
-              <label for="With_SMS">SMS로 수신하겠습니다.</label>
+              <label for="with_sms">SMS로 수신하겠습니다.</label>
             </span>
           </th>
         </tr>
