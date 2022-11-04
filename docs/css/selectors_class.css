@@ -1,0 +1,21 @@
+.color_green {
+  color: green;
+}
+
+.color_blue {
+  color: blue;
+}
+
+.background_color_yellow {
+  background-color: yellow;
+}
+
+.green_yellow {
+  color: green;
+  background-color: yellow;
+}
+
+.blue_yellow {
+  color: blue;
+  background-color: yellow;
+}
