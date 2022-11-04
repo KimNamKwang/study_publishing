@@ -6,16 +6,30 @@
   color: blue;
 }
 
-.background_color_yellow {
+.background_color_yellow_parent > * {
   background-color: yellow;
 }
 
-.green_yellow {
+.color_green {
   color: green;
-  background-color: yellow;
 }
 
-.blue_yellow {
+.color_blue {
   color: blue;
-  background-color: yellow;
+}
+
+#background_color_aqua {
+  background-color: aqua;
+}
+
+h3 {
+  color: brown;
+}
+
+.same_style_class {
+  color: skyblue;
+}
+
+#same_style_id {
+  color: aquamarine;
 }
