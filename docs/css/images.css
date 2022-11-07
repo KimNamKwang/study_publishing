@@ -1,0 +1,15 @@
+* {
+  margin-bottom: 20;
+}
+.border-round-10px {
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.border-round-50px {
+  border: 2px solid red;
+  border-radius: 50px; /*절댓값*/
+}
+.border-round-50 {
+  border: 2px solid red;
+  border-radius: 50%; /*퍼센트*/
+}
