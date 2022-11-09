@@ -1,47 +1,64 @@
-* {
-  border: 1px dotted gray;
-}
-.main-class {
-  display: flex;
+.outline {
+  border: 1px dotted black;
   background-color: rgb(216, 218, 61);
   width: 550px;
-  height: 600px;
-  padding: 10px;
-  border: 1px dotted;
+  height: 500px;
 }
 
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin: 15px;
-  width: 150px;
+.margin {
+  margin: 0px;
 }
 
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  /* display: flex;
-  list-style-type: none;
-  padding: 0px;
-  justify-content: space-around; */
-}
-.list > li {
-  margin-bottom: 10px;
-  border-right: solid;
-  border-right-width: 15px;
-  padding: 5px;
-  background-color: white;
-  font-weight: bold;
-}
-
-.div-title {
-  font-weight: bolder;
+.font {
   font-size: 30px;
-  color: rgb(147, 0, 128);
-  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.text-color {
+  color: rgb(128, 0, 128);
+  margin: 20px 20px 0px 0px;
+}
+
+.text-background_solid {
+  color: rgb(0, 0, 255);
+  background-color: white;
+  border-style: solid;
+  border-width: 0px 16px 0px 0px;
+  border-color: black;
+  width: 130px;
+  height: 22px;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.ul-flat {
+  list-style-type: none;
+  margin: 40px 25px 0px 15px;
+  padding: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.dotted {
+  border-top: 1px dotted;
+  padding-top: 15px;
+}
+
+.padding {
+  padding-bottom: 15px;
+}
+
+.div {
+  width: 340px;
+  height: 215px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-decoration {
+  text-decoration: none;
 }
