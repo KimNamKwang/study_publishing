@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <style>
+      .menu {
+        background-color: lightgray;
+        width: 500px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu h2 {
+        margin: 5px 0;
+        padding: 0;
+      }
+
+      .menu h2 a {
+        font-size: 15pt;
+        display: block;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .menu h2 a:hover,
+      menu h2:active {
+        background-color: lightcyan;
+        color: yellow;
+      }
+
+      .menu p {
+        padding: 0 10px;
+        margin: 0;
+        height: 0;
+        background-color: skyblue;
+        overflow: hidden; /*답변 내용들 숨기기*/
+        transition: height 0.5s ease-in;
+      }
+
+      .menu:target p {
+        overflow: auto;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 활용 5 : 아코디언 메뉴 만들기</h1>
+
+    <div class="menu" id="part1">
+      <h2>
+        <a href="#part1"> Q.이름이 무엇인가요? </a>
+        <!-- h2태그가 질문부분 아래 p태그가 답변 부분-->
+      </h2>
+      <p>
+        A. 홍길동입니다.홍길동입니다.홍길동입니다.홍길동입니다.
+        홍길동입니다.홍길동입니다.홍길동입니다.홍길동입니다.홍길동입니다
+        홍길동입니다.홍길동입니다.홍길동입니다..홍길동입니다.
+      </p>
+    </div>
+    <div class="menu" id="part2">
+      <h2>
+        <a href="#part2"> Q.몇살인가요? </a>
+      </h2>
+      <p>
+        12살입니다.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~~~~~~~~~~~~~~~~~~~~~~~~ssssssssssssssssssssafffffffffffff
+      </p>
+    </div>
+    <div class="menu" id="part3">
+      <h2>
+        <a href="#part3"> Q.내일 뭐하시나요? </a>
+      </h2>
+      <p>잡니다.</p>
+    </div>
+  </body>
+</html>
