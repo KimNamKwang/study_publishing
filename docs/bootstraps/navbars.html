@@ -14,9 +14,109 @@
     <link rel="stylesheet" href="./CSSs/commons.css" />
   </head>
   <body>
-    <div class="fs-3">Navigation Bar</div>
-    <div class="container">
-      <nav class="navbar">
+    <hr />
+    <div class="fs-3">Navigation Bar Basic</div>
+    <nav class="navbar navbar-expand bg-primary bg-opacity-25">
+      <div class="container">
+        <div class="navbar-nav">
+          <a href="" class="nav-link">Home</a>
+          <a href="" class="nav-link">Feature</a>
+          <a href="" class="nav-link">Pricing</a>
+        </div>
+      </div>
+    </nav>
+
+    <hr />
+
+    <div class="fs-3">Navigation Bar With Brand</div>
+    <nav class="navbar navbar-expand">
+      <div class="container">
+        <div class="navbar-nav">
+          <a href="" class="navbar-brand">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+              width="35"
+            />
+            Brand
+          </a>
+          <a href="" class="nav-link">Home</a>
+          <a href="" class="nav-link">Feature</a>
+          <a href="" class="nav-link">Pricing</a>
+        </div>
+      </div>
+    </nav>
+
+    <hr />
+
+    <div class="fs-3">Navigations Bar with color</div>
+    <nav class="navbar navbar-expand bg-dark navbar-dark bg-opacity-90">
+      <div class="container">
+        <a href="" class="navbar-brand">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+            alt=""
+            srcset=""
+            width="35"
+          />
+          Brand
+        </a>
+
+        <div class="navbar-nav">
+          <a href="" class="nav-link">Home</a>
+          <a href="" class="nav-link">Feature</a>
+          <a href="" class="nav-link">Pricing</a>
+        </div>
+      </div>
+    </nav>
+
+    <hr />
+
+    <div class="fs-3">Navigations Bar with Dropdown</div>
+    <nav class="navbar navbar-expand">
+      <div class="container">
+        <!--container fluid냐 container냐에 따라 양 옆 마진이 바뀜-->
+        <a href="" class="navbar-brand">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+            alt=""
+            srcset=""
+            width="35"
+          />
+          Brand
+        </a>
+
+        <div class="navbar-nav">
+          <!-- <div class="nav-item">
+                <a href="" class="nav-link">Home</a>
+                <a href="" class="nav-link">Home</a>
+              </div> 
+            원래는 이렇게 써줘야 하나 a태그는 안써줘도 되서 안 썼었음-->
+          <a href="" class="nav-link">Home</a>
+          <a href="" class="nav-link">Feature</a>
+          <a href="" class="nav-link">Pricing</a>
+          <div class="nav-item dropdown">
+            <a
+              href="#dropdownTarget"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Dropdown</a
+            >
+            <div id="dropdownTarget" class="dropdown-menu">
+              <a href="" class="dropdown-item nav-link">Menu One</a>
+              <a href="" class="dropdown-item nav-link">Menu Two</a>
+              <a href="" class="dropdown-item nav-link">Menu Three</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <hr />
+    <div class="fs-3">Navigation Bar With Collapse</div>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container">
+        <!--navbar-expand-sm 은 브라우저 창이 sm이 되면 메뉴바가 세로로 정렬됌.
+          cross browsing-->
         <a href="" class="navbar-brand">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
@@ -24,13 +124,46 @@
           />
           Brand
         </a>
-        <div class="navbar-nav">
-          <a href="" class="">Home</a>
-          <a href="" class="">Feature</a>
-          <a href="" class="">Pricing</a>
+        <!--collapse의 경우에는 토글이 아니라 토글러. navbar-toggler -->
+        <a href="#collapseID" class="navbar-toggler" data-bs-toggle="collapse"
+          >Collapse Menu</a
+        >
+        <div class="collapse navbar-collapse" id="collapseID">
+          <div class="navbar-nav">
+            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">Feature</a>
+            <a href="" class="nav-link">Pricing</a>
+          </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+
+    <div class="fs-3">Navigation Bar With collapse2</div>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container">
+        <a href="" class="navbar-brand">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+            width="35"
+          />
+          Brand
+        </a>
+        <a href="#collapseID2" class="navbar-toggler" data-bs-toggle="collapse"
+          ><span class="navbar-toggler-icon"></span
+        ></a>
+        <div class="collapse navbar-collapse" id="collapseID2">
+          <div class="navbar-nav">
+            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">Feature</a>
+            <a href="" class="nav-link">Pricing</a>
+          </div>
+          <div class="d-flex justify-content-end">
+            <a href="" class="btn btn-primary">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <hr />
     <a href="./index.html">>>Index</a>
     <script
